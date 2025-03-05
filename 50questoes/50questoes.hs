@@ -148,7 +148,7 @@ powerEnumFrom n m
     | m > 1 = powerEnumFrom n (m - 1) ++ [n^(m-1)]
     | otherwise = []
 
--- Questão 21                                    -- VER MELHOR !!!
+-- Questão 21                                   
 isPrime :: Int -> Bool
 isPrime n
     | n >= 2 = primeCheck n 2
@@ -242,7 +242,7 @@ unlines' :: [String] -> String
 unlines' [] = []
 unlines' (h:t) = h ++ "\n" ++ unlines' t
 
--- Questão 34                               -- VER MELHOR !!!
+-- Questão 34                              
 pMaior :: Ord a => [a] -> Int
 pMaior [_] = 0
 pMaior (h:t)
