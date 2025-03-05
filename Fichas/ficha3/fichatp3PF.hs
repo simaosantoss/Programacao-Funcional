@@ -93,7 +93,7 @@ fechada´ (p1:p2:ps)
     | otherwise = fechada´ (p2:ps)
 -}
 
--- c) ???
+-- c)
 data Figura = Circulo Ponto Double 
             | Retangulo Ponto Ponto 
             | Triangulo Ponto Ponto Ponto 
@@ -221,7 +221,7 @@ extValor :: Extrato -> Float -> [Movimento]
 extValor (Ext v []) m = []
 extValor (Ext v mvs) m = movimentosMaior mvs m
 
-movimentosMaior :: [(Data,String,Movimento)] -> Float -> [Movimento]                           -- TPC -> Simplificar !!!
+movimentosMaior :: [(Data,String,Movimento)] -> Float -> [Movimento]                          
 movimentosMaior [] v = []
 movimentosMaior ((_ ,_,(Credito x)):t) v | x >= v = Credito x : movimentosMaior t v
                                          | otherwise = movimentosMaior t v
@@ -229,7 +229,7 @@ movimentosMaior ((_ ,_,(Debito x)):t) v  | x >= v = Debito x : movimentosMaior t
                                          | otherwise = movimentosMaior t v
 
 -- b)
-filtro :: Extrato -> [String] -> [(Data,Movimento)]                                            -- TPC -> Fazer com subString em vez de elem e fazer subString
+filtro :: Extrato -> [String] -> [(Data,Movimento)]                                           
 filtro (Ext _ mvs) descs = filtroMovimentos mvs descs 
     where filtroMovimentos :: [(Data,String,Movimento)] 
                                 -> [String] -> [(Data,Movimento)]
@@ -255,5 +255,3 @@ isCre (Debito _) = False
 valorMovimento :: Movimento -> Float 
 valorMovimento (Credito valor) = valor 
 valorMovimento (Debito valor) = valor
-
--- creDeb (Ext _ ((_ ,_,(Credito x)):t))  = Credito x + creDeb t
