@@ -70,7 +70,7 @@ geraNumeros = shuffleM [1..90] -- Gera e embaralha os números de 1 a 90
 -}
 
 -- 1.b -- resolução errada, tem um erro no 'if' (a ser corrigido)
-{-
+
 mastermind :: IO ()
 mastermind = do chaveSecreta <- gerarChaveSecreta
                 putStrLn "Insira 4 digitos"
@@ -101,4 +101,4 @@ quantosIguais (x,y,z,w) (a:b:c:d:_) =
       z == digitToInt c ,
       w == digitToInt d
     ]
--}
+    
