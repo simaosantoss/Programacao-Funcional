@@ -99,22 +99,6 @@ data Figura = Circulo Ponto Double
             | Triangulo Ponto Ponto Ponto 
                 deriving (Show,Eq)
 
-
-{-
-areaTriangulo :: Ponto -> Ponto -> Ponto -> Double
-areaTriangulo (x1,y1) (x2,y2) (x3,y3) =
-    abs ((x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2)) / 2)            -- fórmula da area vista na net
-
-triangula :: Poligonal -> [Figura]
-triangula (p1:p2:p3:ps) = Triangulo p1 p2 p3 : triangula (p1:p3:ps)
-triangula _ = []
--}
--- d)
-
--- e) 
-
-
-
 -- 3
 data Contacto = Casa Integer
             | Trab Integer
