@@ -2,8 +2,8 @@ Contém todas as fichas relativas à cadeira de Programação Funcional (1º ano
 
 ## 🛠️ Como usar
 
-Este repositório contém ficheiros .hs para serem abertos e testados no interpretador Haskell (GHCi).  
+Este repositório contém ficheiros `.hs` para serem abertos e testados no interpretador Haskell (GHCi).  
 Para executar um ficheiro, utilize:
 
-bash
+```bash
 ghci nome_do_ficheiro.hs
