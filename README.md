@@ -1,11 +1,12 @@
-# Programacao-Funcional
+# Functional-Programming
 
-Contém todas as fichas relativas à cadeira de Programação Funcional (1º ano, 1º semestre) do ano letivo 2024/25, para além de resoluções das 50 questões.
+This repository contains all the worksheets for the Functional Programming course (1st year, 1st semester) of the 2024/25 academic year, along with solutions to 50 exercises.
 
-## 🛠️ Como usar
+## 🛠️ How to use
 
-Este repositório contém ficheiros `.hs` para serem abertos e testados no interpretador Haskell (GHCi).  
-Para executar um ficheiro, utilize:
+This repository includes `.hs` files to be opened and tested in the Haskell interpreter (GHCi).  
+To run a file, use:
 
 ```bash
-ghci nome_do_ficheiro.hs
+ghci filename.hs
+
